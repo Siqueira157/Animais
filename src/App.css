@@ -1,0 +1,147 @@
+/* src/App.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: bisque;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* App Component Styles */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* AnimalList Component Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #000000;
+  margin: 20px 0;
+  padding: 20px;
+  background-color:rgb(254, 242, 217);
+  box-shadow: 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #e44d26;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c93412;
+}
+
+/* AnimalForm Component Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgb(255, 246, 229);
+  box-shadow: 0 0 2000px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 205, 144);
+  border-radius: 10px;
+}
+
+input[type="file"] {
+  padding: 10px 0;
+}
+
+button[type="button"] {
+  background-color: #e44d26;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+button[type="button"]:hover {
+  background-color: #c93412;
+}
+
+input[type="file"] {
+  display: none; /* Esconder o input real */
+}
+
+input[type="file"] {
+  display: none; 
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #e44d26;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #c93412;
+}
+
+/* Estilo para mostrar que um arquivo foi escolhido */
+input[type="file"]:not([disabled]):focus + .custom-file-upload {
+  box-shadow: 0 0 5px rgba(68, 138, 255, 0.5);
+}
+
+/* Esconder a borda padrão no foco do input tipo arquivo no Firefox */
+input[type="file"]::-moz-focus-inner {
+  border: 0;
+}
+
+.remov {
+  margin-left: 50px;
+}
+
+.alter {
+  margin-right: 70px;
+}
